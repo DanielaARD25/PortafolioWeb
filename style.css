@@ -14,6 +14,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*STYLE*/
@@ -23,23 +24,33 @@ element.style {
     z-index: -1;
 }
 .absolute {
+    max-width: 100%; /* Asegura que no desborde el ancho de la pantalla */
     position: absolute;
+    overflow: hidden;
+        left: 0; /* Asegura que no desborde hacia los lados */
+        right: 0;
+    
 }
 svg {
     max-width: 100%;
+    height: auto;;
 }
 
 .grain {
     width: 100%;
     height: 100%;
     background-image: url(./assets/grain.png);
-    background-position: 0 0;
-    background-size: 300px 300px;
+    background-size: auto; /* Ajusta el fondo para que mantenga sus proporciones */
+    background-repeat: repeat; /* Evita que el fondo se repita */
+    background-position: center;
 }
 
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F5F5F4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 html{
@@ -447,4 +458,9 @@ footer{
 
 footer p{
     text-align: center;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }

@@ -39,6 +39,13 @@
         height: 275px;
         margin: 0 auto 2rem;
     }
+    .section_pic-container .absolute {
+        width: 80%; /* Reduce el tamaño de la imagen para pantallas más pequeñas */
+        margin: 0 auto; /* Centra la imagen */
+    }
+    .grain {
+        background-size: contain; /* Ajusta el fondo para que se contenga dentro de la pantalla */
+    }
     .about-containers{
         margin-top: 0;
     }
@@ -85,6 +92,16 @@
         width: auto;
         height: 46vw;
         justify-content: center;
+    }
+    .section_pic-container .absolute {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción */
+        object-fit: contain; /* Ajusta la imagen para que se contenga dentro del contenedor */
+    }
+    .grain {
+        background-size: auto; /* Mantiene las proporciones originales */
+        background-repeat: repeat; /* Permite que el fondo se repita */
+        background-position: center; /* Centra el fondo */
     }
     .section_text_p2{
         font-size: 1.25rem;
