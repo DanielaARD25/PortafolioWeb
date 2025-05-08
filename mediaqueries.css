@@ -2,6 +2,7 @@
     #profile{
         height: 83vh;
         margin-bottom: 6rem;
+        background-size: cover;
     }
     .about-containers{
         flex-wrap: wrap;
@@ -20,6 +21,8 @@
     }
     #profile, .section-container{
         display: block;
+        background-size: contain;
+        background-position: center;
     }
     .arrow{
         display: none;
@@ -48,6 +51,8 @@
     #profile{
         height: 83vh;
         margin-bottom: 0;
+        background-size: 100% 100%; 
+        background-position: top;
     }
     article{
         font-size: 1rem;
